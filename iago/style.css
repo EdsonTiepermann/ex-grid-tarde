@@ -1,12 +1,74 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    height: 45px;
+    border: 5px solid blue;
+    padding: 10px;
+}
+
+nav {
+    height: 75px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 5px solid purple;
+}
+
 .container-grid {
     display: grid;
-    grid-template-columns: auto auto;
-    
-    gap: 10px;
-    height: 300px;
+    grid-template-columns: 740px 740px;
+    grid-template-rows: 250px 250px;    
+    gap: 10px;    
     border: 5px solid red;
     justify-content: center;
+    padding: 10px;
+    margin-top: 40px;
 
+}
+
+main {
+    height: 180px;
+}
+
+main, article, aside {
+    
+    border: 5px solid black;
+}
+
+.declaration {
+    height: 200px;
+    border: 5px solid orangered;
+    padding: 10px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-content: center;
+    justify-content:center;
+    gap: 100px;    
+}
+
+.people-dcl{
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    border: 5px solid green;
+    align-items: center;
+    transition: width 1s;
+    transition: height 1s;
+}
+
+.people-dcl:hover {
+    width: 180px;
+    height: 180px;
+}
+
+footer {
+    height: 80px;
+    border: 5px solid tomato;
+    margin-top: 15px;
 }
 
 
