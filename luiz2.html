@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .item1 {
+            grid-area: header;
+            background-color: black;
+            color: white;
+        }
+
+        .item2 {
+            grid-area: Menu;
+            background-color: #49d40d;
+        }
+
+        .item3 {
+            grid-area: navegação;
+            background-color: white;
+            column-gap: 10px;
+            gap: 500px;
+        }
+
+        .item5 {
+            grid-area: footer;
+            background-color: rgb(179, 153, 8);
+        }
+
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'menu navegação navegação  right right right '
+                'menu footer footer footer footer footer';
+            gap: 5px;
+            column-gap: 50px;
+            background-color: #7b7575;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            text-align: center;
+            padding: 50px 0;
+            font-size: 30px;
+        }
+
+
+        .container {
+            display: flex;
+            background-color: aqua;
+            margin: 15px;
+            padding: 15px;
+            
+
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="item6">grid</div>
+        </div>
+
+
+        <p></p>
+
+        <div class="grid-container">
+            <div class="item1">Header</div>
+            <div class="item2">menu</div>
+            <div class="item3">navegação</div>
+            <div class="item5">Footer</div>
+
+        </div>
+
+
+    </body>
+
+</html>
