@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item1 {
+            grid-area: header;
+        }
+
+        .item2 {
+            grid-area: nav;
+        }
+
+        .item3 {
+            grid-area: quadro1;
+        }
+
+        .item4 {
+            grid-area: quadro2;
+        }
+
+        .item5 {
+            grid-area: quadro3;
+        }
+
+        .item6 {
+            grid-area: quadro4;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'nav nav nav nav nav nav '
+                'quadro1 quadro1 quadro1 quadro2 quadro2 quadro2'
+                'quadro3 quadro3 quadro3 quadro4 quadro4 quadro4';
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+            grid-template-rows: 100px 100px 250px 250px;
+        }
+
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        .flex {
+            display: flex;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-style: solid;
+            border-radius: 20px;
+            justify-content: space-around;
+        }
+
+        .flex div {
+            display: flex;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            background-color: dodgerblue;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">nav</div>
+        <div class="item3">quadro1</div>
+        <div class="item4">quadro2</div>
+        <div class="item5">quadro3</div>
+        <div class="item6">quadro 4</div>
+    </div>
+    <div class="flex">
+        <div><img src="Sem título.jpg" alt=""></div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+
+</body>
+
+</html>
