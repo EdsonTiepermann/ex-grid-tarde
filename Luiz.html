@@ -6,33 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-         div.container{
-            display: flex;
-            flex-direction: column;
-            border: 10px solid red;
-            margin: 10px;
-            padding: 10px rgba(111, 6, 6, 0.567);
+        
+
+
+
+
+        .item1 {
             background-color: black;
+            display: flex;
             color: white;
-            height: 50px;
             text-align: center;
-            font-family: 'Times New Roman', Times, serif;
-            font-weight: bolder;
-            font-size: larger;
+            flex-direction: row;
+            -ms-flex-align: center;
+            border: rgb(211, 16, 16);
+            margin: 10px;
+
 
         }
+        
+
+    .grid-container {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          grid-template-rows: auto auto auto;
+          
+
+       }  
+       .grid-item {
+        font-weight: lighter;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: rgba(29, 176, 205, 0.614);
+        border: 10px solid rgb(10, 34, 196);
+        padding: 12px;
+
+       }    
+
+          
+
+        
     </style>
 
-<div class="container"> 
-<header class="container">Teste</header>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        
+<div class=" grid-container"> 
+    <div item="1"></div>
+    <div class="item1"> aqui</div>
+        <div class="grid-item">header</div>
+        <div class="grid-item">main</div>
+        <div class="grid-item">article</div>
+        <div class="grid-item">right</div>
 </div>
     
 </head>
