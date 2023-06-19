@@ -6,14 +6,14 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <title>Pagina</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <header>
+  <header class="grid-container">
     <p>Pagina Web</p>
   </header>
   <style>
     .grid-container {
       display: grid;
-      grid-template-rows: auto auto;
-      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      grid-template-columns: auto;
       grid-column-gap: 10px;
       grid-row-gap: 10px;
       gap: 10px;
@@ -30,36 +30,90 @@
 
     }
 
+    .grid-container>p {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+
+    }
+
     #conteudo1 {
-      grid-row: 1 / 4;
+      grid-column: 1 / 2;
+      grid-row: 1 / 20;
+      background-color: green;
+
+    }
+
+    #conteudo2 {
+      grid-column: 2 / 3;
+    }
+
+    #conteudo3 {
+      grid-column: 1 / 2;
+    }
+
+    #conteudo4 {
+      grid-column: 2 / 3;
+    }
+
+    #foto1 {
+      grid-column: 1 / 2;
+      grid-row: 1 / 30;
+      border-radius: 50%;
+      width: 300px;
+      heigth: 200px;
+    }
+
+    #foto2 {
+      grid-column: 2 / 3;
+      grid-row: 2 / 30;
+      border-radius: 50%;
+      width: 300px;
+    }
+
+    #foto3 {
+      grid-column: 3 / 4;
+      grid-row: 3 / 30;
+      border-radius: 50%;
+      width: 300px;
+    }
+
+    #foto4 {
+      grid-column: 4 / 5;
+      grid-row: 4 / 30;
+      border-radius: 50%;
+      width: 300px;
     }
   </style>
 </head>
 
 <body>
-  <nav>
-
+  <nav class="grid-container">
+    <div>
+      Navegação
+    </div>
   </nav>
 
   <main>
     <div class="grid-container">
-      <div id="conteudo1">
-        Conteudo 1</div>
-      <div> Conteudo 2</div>
-      <div> Conteudo 3</div>
-      <div> Conteudo 4</div>
+      <div id="conteudo1"> Conteudo 1</div>
+      <div id="conteudo2"> Conteudo 2</div>
+      <div id="conteudo3"> Conteudo 3</div>
+      <div id="conteudo4"> Conteudo 4</div>
+
     </div>
-
-    <div> foto1</div>
-    <div> foto2</div>
-    <div> foto3</div>
-    <div> foto4</div>
   </main>
+  <div class="grid-container">
+    <div id="foto1">foto</div>
+    <div id="foto2">foto</div>
+    <div id="foto3">foto</div>
+    <div id="foto4">foto</div>
+  </div>
 
-  <footer>
-    Rodape
+  <footer class="grid-container">
+    <p>Rodape</p>
   </footer>
 </body>
 
 </html>
-</htm>
