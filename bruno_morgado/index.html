@@ -7,9 +7,13 @@
   <title>Pagina</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <header class="grid-container">
-    <p>Pagina Web</p>
+    <div>Pagina</div>
   </header>
   <style>
+    header {}
+
+    body {}
+
     .grid-container {
       display: grid;
       grid-template-rows: auto;
@@ -17,8 +21,10 @@
       grid-column-gap: 10px;
       grid-row-gap: 10px;
       gap: 10px;
-      background-color: #2196F3;
       padding: 10px;
+      background-image: url('preto.png');
+      background-size: 100% 100%;
+
 
     }
 
@@ -31,7 +37,7 @@
     }
 
     .grid-container>p {
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: blue;
       text-align: center;
       padding: 20px 0;
       font-size: 30px;
@@ -41,12 +47,13 @@
     #conteudo1 {
       grid-column: 1 / 2;
       grid-row: 1 / 20;
-      background-color: green;
+
 
     }
 
     #conteudo2 {
       grid-column: 2 / 3;
+      grid-row: 1 / 20;
     }
 
     #conteudo3 {
@@ -61,51 +68,94 @@
       grid-column: 1 / 2;
       grid-row: 1 / 30;
       border-radius: 50%;
-      width: 300px;
-      heigth: 200px;
+      width: 150px;
+      height: 150px;
+      background-color: black;
+      background-image: url('batata_frita.jpg');
+      background-size: 100% 100%;
+
     }
 
     #foto2 {
       grid-column: 2 / 3;
       grid-row: 2 / 30;
       border-radius: 50%;
-      width: 300px;
+      width: auto;
     }
 
     #foto3 {
       grid-column: 3 / 4;
       grid-row: 3 / 30;
       border-radius: 50%;
-      width: 300px;
+      width: auto;
     }
 
     #foto4 {
       grid-column: 4 / 5;
       grid-row: 4 / 30;
       border-radius: 50%;
-      width: 300px;
+      width: auto;
     }
   </style>
 </head>
 
 <body>
+
+
+
   <nav class="grid-container">
     <div>
-      Navegação
-    </div>
+      <a href="#footer">Rodape</a>
   </nav>
 
   <main>
     <div class="grid-container">
-      <div id="conteudo1"> Conteudo 1</div>
-      <div id="conteudo2"> Conteudo 2</div>
+      <div id="conteudo1">
+
+        Agora, mais do que nunca, é a hora.. Por que o Mar Vermelho é azul?. You say potatoe, I say starchy carbs. A
+        vida é uma sucessão de sucessivos que sucedem sucessivamente sem cessar.. Na vida tudo é passageiro, menos o
+        motorista e o cobrador….
+
+        Não concordo nem discordo, muito pelo contrário.. O sol nasce, a bicicleta anda, o lobo uiva e o urso panda.. A
+        vida é uma vai e vem que não tem volta.. Pobre só enche a barriga quando morre afogado.. Cemeteries are just
+        garbage dumps filled with humans.
+
+        A vida é uma vai e vem que não tem volta.. O povo unido é gente pra caramba.. Toda regra tem exceção.. O
+        importante é o que importa.. Em rio de piranhas, jacaré nada de costas..
+
+        O povo unido é gente pra caramba.. Diz-me com quem andas e te direi se vou contigo.. Agora, mais do que nunca, é
+        a hora.. I have a moral code, but I haven't figured out how to read it yet. Por que o Mar Vermelho é azul?.
+
+        Jesus salva! Que passa para Moisés, que chuta e é gooooolllll.... Um é pouco, dois é bom e três é ímpar.. Eu sem
+        mim não existo.. Por causa da pressa, é que a mosca nasceu sem osso.. Há muitas coisas mais importantes que o
+        dinheiro...mas elas custam caro!.
+      </div>
+      <div id="conteudo2">
+
+        Agora, mais do que nunca, é a hora.. Por que o Mar Vermelho é azul?. You say potatoe, I say starchy carbs. A
+        vida é uma sucessão de sucessivos que sucedem sucessivamente sem cessar.. Na vida tudo é passageiro, menos o
+        motorista e o cobrador….
+
+        Não concordo nem discordo, muito pelo contrário.. O sol nasce, a bicicleta anda, o lobo uiva e o urso panda.. A
+        vida é uma vai e vem que não tem volta.. Pobre só enche a barriga quando morre afogado.. Cemeteries are just
+        garbage dumps filled with humans.
+
+        A vida é uma vai e vem que não tem volta.. O povo unido é gente pra caramba.. Toda regra tem exceção.. O
+        importante é o que importa.. Em rio de piranhas, jacaré nada de costas..
+
+        O povo unido é gente pra caramba.. Diz-me com quem andas e te direi se vou contigo.. Agora, mais do que nunca, é
+        a hora.. I have a moral code, but I haven't figured out how to read it yet. Por que o Mar Vermelho é azul?.
+
+        Jesus salva! Que passa para Moisés, que chuta e é gooooolllll.... Um é pouco, dois é bom e três é ímpar.. Eu sem
+        mim não existo.. Por causa da pressa, é que a mosca nasceu sem osso.. Há muitas coisas mais importantes que o
+        dinheiro...mas elas custam caro!.
+      </div>
       <div id="conteudo3"> Conteudo 3</div>
       <div id="conteudo4"> Conteudo 4</div>
-
     </div>
   </main>
   <div class="grid-container">
-    <div id="foto1">foto</div>
+    <div id="foto1"> foto</div>
     <div id="foto2">foto</div>
     <div id="foto3">foto</div>
     <div id="foto4">foto</div>
