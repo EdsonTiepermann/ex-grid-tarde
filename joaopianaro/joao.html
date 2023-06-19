@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="exercicio.css">
     <style>
+        body {
+            background-color: dodgerblue;
+        }
+
         .item1 {
             grid-area: header;
         }
@@ -34,17 +39,19 @@
             display: grid;
             grid-template-areas:
                 'header header header header header header'
-                'nav nav nav nav nav nav '
+                'nav nav nav nav nav nav'
                 'quadro1 quadro1 quadro1 quadro2 quadro2 quadro2'
                 'quadro3 quadro3 quadro3 quadro4 quadro4 quadro4';
             gap: 10px;
             background-color: #2196F3;
             padding: 10px;
             grid-template-rows: 100px 100px 250px 250px;
+            border-style: solid;
+            border-radius: 20px;
         }
 
         .grid-container>div {
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: white;
             text-align: center;
             padding: 20px 0;
             font-size: 30px;
@@ -52,19 +59,37 @@
 
         .flex {
             display: flex;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: white;
             border-style: solid;
             border-radius: 20px;
             justify-content: space-around;
+            margin-top: 10px;
         }
 
         .flex div {
             display: flex;
             margin: 10px;
-            padding: 20px;
+            padding: 40px;
             font-size: 30px;
             background-color: dodgerblue;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
 
+
+        }
+
+        .rodape {
+            margin-top: 10px;
+            background-color: red;
+            border-style: solid;
+            border-radius: 20px;
+            margin-top: 10px;
+            padding-left: 30%;
+        }
+
+         div :hover {
+            background-color: orange;
         }
     </style>
 </head>
@@ -72,20 +97,43 @@
 <body>
 
     <div class="grid-container">
-        <div class="item1">Header</div>
-        <div class="item2">nav</div>
-        <div class="item3">quadro1</div>
-        <div class="item4">quadro2</div>
-        <div class="item5">quadro3</div>
-        <div class="item6">quadro 4</div>
+        <div class="item1">Gameverse</div>
+        <div class="item2">Bem-vindo ao nosso site de jogos! Explore uma variedade de jogos emocionantes, conecte-se com
+            outros jogadores apaixonados e mergulhe em aventuras inesquecíveis. Prepare-se para se divertir ao máximo!
+        </div>
+        <div class="item3">"The Witcher 3: Wild Hunt
+            "The Witcher 3: Wild Hunt" é um aclamado RPG de ação em mundo aberto que combina uma narrativa rica e
+            envolvente com um vasto mundo repleto de perigos e escolhas morais impactantes. Explore terras devastadas
+            pela guerra, cumpra missões desafiadoras e mergulhe em um universo de fantasia sombria e complexa.</div>
+
+        <div class="item4">Assassin's Creed Valhalla
+            "Assassin's Creed Valhalla" transporta os jogadores para a era dos vikings, oferecendo uma experiência épica
+            de ação e aventura. Navegue pelos mares gelados, construa um assentamento e lidere incursões em territórios
+            inimigos enquanto desvenda os segredos da Irmandade dos Assassinos.</div>
+
+        <div class="item5">Hades
+            "Hades" é um jogo de ação roguelike que combina combates frenéticos e desafiadores com uma história
+            envolvente da mitologia grega. Enfrente hordas de criaturas mitológicas, fortaleça seus poderes divinos e
+            tente escapar do submundo enquanto desvenda os segredos de sua família.</div>
+
+        <div class="item6">Animal Crossing: New Horizons"
+            "Animal Crossing: New Horizons" é um adorável simulador de vida em uma ilha deserta. Construa sua própria
+            comunidade, decore sua casa, faça amizade com os adoráveis animais e mergulhe em uma atmosfera relaxante e
+            encantadora onde você define seu próprio ritmo.</div>
     </div>
     <div class="flex">
-        <div><img src="Sem título.jpg" alt=""></div>
-        <div>2</div>
-        <div>3</div>
+        <div><img
+                src="EGS_TheWitcher3WildHuntCompleteEdition_CDPROJEKTRED_S1_2560x1440-82eb5cf8f725e329d3194920c0c0b64f.jpg"
+                alt="" height="200px" width="200px"></div>
+        <div><img src="2702178.jpg" alt="" height="200px" width="200px"></div>
+        <div><img src="2560x1440-2560x1440-5e710b93049cbd2125cf0261dcfbf943.jpg" alt="" height="200px" width="200px">
+        </div>
+        <div><img src="91YYP1pWpVL._AC_UF1000,1000_QL80_.jpg" alt="" height="200px" width="200px"></div>
     </div>
-
-
+    <div class="rodape">
+        <h1>© 2023 Gamerverse.todos os direitos reservados</h1>
+        <span>site feito por:João Victor Pianaro</span>
+    </div>
 </body>
 
 </html>
