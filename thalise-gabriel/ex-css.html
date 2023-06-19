@@ -6,8 +6,8 @@
   <title>Meu Site</title>
   <link rel="stylesheet" href="styles.css"> <!-- Se você tiver um arquivo CSS separado -->
   <style> body {
-     background-color: lightgoldenrodyellow;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Haettenschweiler, 'Arial Liberation Serif', sans-serif;}
+     background-color: #ede3e3;
+    font-family: 'Display', 'Display  Sans Regular', 'Display Grande', 'Display Sans Unicode', Geneva, Verdana, sans-serif, Haettenschweiler, 'Arial Liberation Serif', sans-serif;}
     .container {
       display: flex;
       justify-content: center;
@@ -25,14 +25,14 @@
       text-align: center;
     }
    .imagem-redonda{
-    width: 340px;
-    height: 340px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     object-fit: cover;
    }
    .imagem-vinho{
-    width: 1500px;
-    height: 600px;
+    max-width: 100%;
+  height: auto;
    }
    a:link {
    color: red;
@@ -45,6 +45,13 @@ a:hover {
 }
 a:active {
     color: blue;
+}
+@media only screen and (max-device-width: 600px) {
+/* .menu { width:100%; } */
+}
+.responsivo{
+  max-width: 100%;
+  height: auto;
 }
  </style>
 </head>
@@ -62,16 +69,18 @@ a:active {
         <a href="#laranja">Vinho laranja</a>
 </nav>  
 </div>
-      <img src="vinho.webp" alt="Imagem Vinho" class="imagem-vinho">
+      <img src="vinho.webp" alt="Imagem Vinho" class="responsivo">
       <br>
-      <h4>Clube Vinho ThaliGabe é um destino obrigatório para os apaixonados por vinho, oferendo uma experiência online sofisticada,
-      com uma seleção exclusiva de vinhos, eventos emocionantes e conteúdo enriquecedor sobre fascinante mundo dos vinhos.</h4>
+      <font-face>Clube Vinho ThaliGabe é um destino obrigatório para os apaixonados por vinho, oferendo uma experiência online sofisticada,
+      com uma seleção exclusiva de vinhos, eventos emocionantes e conteúdo enriquecedor sobre fascinante mundo dos vinhos.</font-face>
       <div class="grid-container">
       <div id="seco" class="grid-item">
         <h1>Vinho Seco</h1>
-       <p>O vinho seco é aquele que contém menor teor de glicose, mais precisamente até quatro gramas por litro (4g/l). Seu baixo teor de açúcar é resultado do processo de fermentação das uvas e, por isso, o esperado é que esse vinho não tenha doçura tão perceptível no paladar.</p>
+       <p>O vinho seco é aquele que contém menor teor de glicose, mais precisamente até quatro gramas por litro (4g/l).
+        Seu baixo teor de açúcar é resultado do processo de fermentação das uvas e, por isso, o esperado é que esse vinho não tenha doçura tão perceptível no paladar.</p>
        <h3>Quais são os benefícios do vinho tinto seco?</h3>
-       <p>Além de fazer bem ao coração, consumo moderado da bebida também beneficia a flora intestinal. O consumo moderado de vinho tinto ajuda a remodelar em poucas semanas a microbiota intestinal, cujo papel nas doenças cardiovasculares é cada vez mais reconhecido pela ciência</p>
+       <p>Além de fazer bem ao coração, consumo moderado da bebida também beneficia a flora intestinal. 
+        O consumo moderado de vinho tinto ajuda a remodelar em poucas semanas a microbiota intestinal, cujo papel nas doenças cardiovasculares é cada vez mais reconhecido pela ciência</p>
       </div>
       <div id="suave" class="grid-item">
         <h2> Vinho Suave</h2>
